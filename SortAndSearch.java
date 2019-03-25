@@ -10,8 +10,8 @@ public class SortAndSearch {
 		//intermediate
 			public static int[] bubbleSort(int x[]) {
 				for (int i = 0; i < x.length; i++) {
-					for (int j = 1; j < (x.length - 1); j++) {
-						if (x[j - 1] > x[j]) {
+					for (int j = 1; j < (x.length - 1); j++) { // NOTE: this loop works but would even check finished elements at the end
+						if (x[j - 1] > x[j]) {				   //       please correct the inner loop to only check unsorted elements
 							int a = x[j];
 							x[j] = x[j - 1];
 							x[j - 1] = a;
@@ -21,8 +21,10 @@ public class SortAndSearch {
 				return x;
 			}
 
+			// NOTE: implementation of binSearch is missing
+
 			public static void main(String[] args) {
-				int[] x = {8, 2, 6, 4, 10};
+				int[] x = {8, 2, 6, 4, 10}; // NOTE: implementation is not working with input {5,4,3,2,1} -> result is {5,4,3,2,1}
 				bubbleSort(x);
 				for (int i = 0; i < x.length; i++) {
 				System.out.print(x[i] + " ");
