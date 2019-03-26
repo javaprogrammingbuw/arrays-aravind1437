@@ -8,6 +8,8 @@ public class MagicSquare{
 
                  {
 
+                  // NOTE: Seperate method please!
+
         int square[][]={{4,5,4,8},{5,6,2,7}, {9,3,7,23},{23,3,8,3}}; // NOTE: input is wrong, the tasks says - numbers are only allowed once
                                                                      // e.g.
                                                                      // int square[][]={{16,3,2,13},{5,10,11,8}, {9,6,7,12},{4,15,14,1}};
